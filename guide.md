@@ -109,4 +109,7 @@ journalctl -xe
 ```
 - Login your browser: http://YOUR_IP
 # 3.link Domain
-#
+#3.1 go to namecheap https://www.namecheap.com/myaccount/login/ buy domain
+#3.2 link domain from namecheap to Cloudflare https://www.youtube.com/watch?v=i0IY77IUHx4
+in https://dash.cloudflare.com/ go to setting DNS 
+
