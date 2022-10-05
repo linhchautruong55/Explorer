@@ -156,4 +156,11 @@ cp /root/explorer/dist/* /var/www/Candy/haqq-testnet
 ```
 vi haqq.json
 ```
-
+![image](https://user-images.githubusercontent.com/110772351/194034640-ff9e2737-cf1e-4255-93fb-416a698166b2.png)
+![image](https://user-images.githubusercontent.com/110772351/194034791-a5431e52-0cc9-4680-98f8-63dfb156263e.png)
+- 3.7 run
+```
+yarn build
+systemctl restart nginx
+```
+- 3.8 login domain 
