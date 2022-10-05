@@ -52,10 +52,10 @@ server {
 - Open `/root/explorer/src/views/Home.vue` and edit Main Daskboard
 
 - Open `root/explorer/themeConfig.js` to edit info
-[![image](https://user-images.githubusercontent.com/91453629/190849173-8c15f665-71b5-44f4-98bb-f08401fc08a6.png)](https://github.com/hoangduevu/explorer-setup/issues/1#issuecomment-1252090754)
+![image](https://user-images.githubusercontent.com/110772351/194037605-d1220471-2cc5-4b57-9268-f8b8ee17631c.png)
 
 - Open `/root/explorer/src/@core/layouts/components/AppFooter.vue` to edit footer
-[![image](https://user-images.githubusercontent.com/91453629/190849926-713fc134-c569-4c0d-8097-95e47bb399b8.png)](https://github.com/hoangduevu/explorer-setup/issues/1#issuecomment-1252093365)
+![image](https://user-images.githubusercontent.com/110772351/194037245-21f63a05-c070-4718-b578-a13533fac21c.png)
 
 - Create your logo filenames `logo.svg` and `logo.svg`, then upload to path `/root/explorer/public/`
 
