@@ -63,9 +63,8 @@ server {
 
 - Upload your logo to [imgur](https://imgur.com/), then create your online image link, example `https://i.imgur.com/pBRmmiE.jpg`
 - Open `/root/explorer/src/@core/layouts/components/Logo.vue` to fill your online image link, then Logo of Main Dashboard will be changed
-![image](https://user-images.githubusercontent.com/91453629/190850453-7794ca44-9830-4c1f-902c-8e33c2cdee2f.png)
 ![image](https://user-images.githubusercontent.com/110772351/194036974-3907b508-42b7-45b2-aaa2-d8eabdeeecff.png)
-
+![image](https://user-images.githubusercontent.com/91453629/190850453-7794ca44-9830-4c1f-902c-8e33c2cdee2f.png)
 - Edit json file of your chain in `/root/explorer/src/chains`, fill in your own RPC and API if need (Step 2.2)
 
 ### 2.2 Edit config data of your chain
