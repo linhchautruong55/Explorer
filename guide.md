@@ -109,7 +109,51 @@ journalctl -xe
 ```
 - Login your browser: http://YOUR_IP
 # 3.link Domain
-#3.1 go to namecheap https://www.namecheap.com/myaccount/login/ buy domain
-#3.2 link domain from namecheap to Cloudflare https://www.youtube.com/watch?v=i0IY77IUHx4
-in https://dash.cloudflare.com/ go to setting DNS 
+- 3.1 go to namecheap https://www.namecheap.com/myaccount/login/ buy domain
+- 3.2 link domain from namecheap to Cloudflare https://www.youtube.com/watch?v=i0IY77IUHx4
+- 3.3 in https://dash.cloudflare.com/ go to setting DNS and link your ip
+![image](https://user-images.githubusercontent.com/110772351/194029872-b586d6e9-51f2-475b-98db-9c147ebdf58b.png)
+- 3.4 edit /etc/nginx/sites-available/default
+```
+server {
+        listen 80 ;
+        #listen [::]:80 default_server;
+        listen 443;
+        server_name haqq-api.blockchain001.xyz;
+        #index index.html;
+        #root /var/www/cosmos;
+        location / {
+                #add_header Access-Control-Allow-Origin *;
+                add_header Access-Control-Max-Age 3600;
+                add_header Access-Control-Expose-Headers Content-Length;
+                proxy_pass http://138.201.139.207:30317;
+        }
+}
+
+server {
+        listen 80 ;
+        #listen [::]:80 default_server;
+        listen 443;
+        server_name haqq-rpc.blockchain001.xyz;
+        #index index.html;
+        #root /var/www/cosmos;
+        location / {
+                #add_header Access-Control-Allow-Origin *;
+                add_header Access-Control-Max-Age 3600;
+                add_header Access-Control-Expose-Headers Content-Length;
+                proxy_pass http://138.201.139.207:30657;
+        }
+}
+
+```
+- 3.5 in folder mkdir /var/www/YOUR_NAME create a subdirectory and copy the dist in there . example
+```
+mkdir /var/www/YOUR_NAME/haqq-testnet
+cp /root/explorer/dist/* /var/www/Candy/haqq-testnet
+
+```
+- 3.6 edit file json as command vi..  add domain to api , rpc example
+```
+vi haqq.json
+```
 
