@@ -3,7 +3,7 @@
 
 ## 1. Setup and install neccessary packages
 ```
-git clone https://github.com/ping-pub/explorer.git
+git clone https://github.com/kj89/explorer.git
 
 # Remove old yarn and nodejs (if they are so old and incompatible)
 sudo apt remove yarn
