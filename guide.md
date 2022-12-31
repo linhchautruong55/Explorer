@@ -149,10 +149,7 @@ server {
                 proxy_pass http://138.201.139.207:30657;
         }
 }
-- build
-````
-yarn build
-````
+
 ```
 - 3.5 in folder mkdir /var/www/YOUR_NAME create a subdirectory and copy the dist in there . example
 ```
