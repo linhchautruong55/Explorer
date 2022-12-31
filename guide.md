@@ -115,6 +115,10 @@ journalctl -xe
 - 3.3 in https://dash.cloudflare.com/ go to setting DNS and link your ip
 ![image](https://user-images.githubusercontent.com/110772351/194029872-b586d6e9-51f2-475b-98db-9c147ebdf58b.png)
 - 3.4 edit /etc/nginx/sites-available/default
+````
+cd explorer/
+vi /etc/nginx/sites-available/default
+````
 ```
 server {
         listen 80 ;
@@ -145,17 +149,25 @@ server {
                 proxy_pass http://138.201.139.207:30657;
         }
 }
-
+- build
+````
+yarn build
+````
 ```
 - 3.5 in folder mkdir /var/www/YOUR_NAME create a subdirectory and copy the dist in there . example
 ```
 mkdir /var/www/YOUR_NAME/haqq-testnet
 cp /root/explorer/dist/* /var/www/Candy/haqq-testnet
-
+#for example
+mkdir /var/www/Candy/haqq-testnet
+cp -rf dist/* /var/www/Candy/celestia
 ```
 - 3.6 edit file json as command vi..  add domain to api , rpc example
 ```
+cd src/chains/mainnet/
 vi haqq.json
+#or
+vi src/chains/mainnet/haqq.json
 ```
 ![image](https://user-images.githubusercontent.com/110772351/194034640-ff9e2737-cf1e-4255-93fb-416a698166b2.png)
 ![image](https://user-images.githubusercontent.com/110772351/194034791-a5431e52-0cc9-4680-98f8-63dfb156263e.png)
@@ -165,3 +177,4 @@ yarn build
 systemctl restart nginx
 ```
 - 3.8 login domain 
+lưu ý : nếu đã chạy wed hoàn chỉnh muốn thêm chain thì chạy chỉnh file .json rồi chạy yarn serve edit wed xon chạy yarn build . sau đó làm tiếp từ 3.4 trở đi
